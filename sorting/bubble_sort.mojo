@@ -24,5 +24,3 @@ def main():
         assert_equal(result[i], i + 1)
     
     print("Tests passed!")
-
-main()
