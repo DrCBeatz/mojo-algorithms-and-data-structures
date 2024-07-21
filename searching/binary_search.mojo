@@ -1,6 +1,4 @@
-# binary_search.mojo
-
-from testing import assert_equal
+# searching/binary_search.mojo
 
 fn binary_search(nums: List[Int], target: Int) -> Int:  
     var l = 0  
@@ -14,16 +12,3 @@ fn binary_search(nums: List[Int], target: Int) -> Int:
       else:  
         return mid  
     return -1
-
-def main():
-    var test_list = List[Int](1, 2, 3, 4, 5)
-
-    # test value found in test_list
-    result = binary_search(test_list, 3)
-    assert_equal(result, 2)
-
-    # test value not found in test_list
-    result = binary_search(test_list, 6)
-    assert_equal(result, -1)
-
-    print("Tests passed!")
